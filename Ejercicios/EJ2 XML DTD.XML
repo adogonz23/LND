@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE Inmobiliaria [
+  <!ELEMENT Inmobiliaria (casa)+>
+  <!ELEMENT casa (metros, direccion, propietarios, precio)>
+  <!ELEMENT direccion (descripcion, texto)+>
+  <!ELEMENT metros (#PCDATA)>
+  <!ELEMENT propietarios (#PCDATA)>
+  <!ELEMENT precio (#PCDATA)>
+  <!ELEMENT descripcion (#PCDATA)>
+  <!ELEMENT texto (#PCDATA)>
+  ]>
+
+<Inmobiliaria>
+  <casa>
+    <metros>90</metros>
+    <direccion>
+      <descripcion>Bonita casa en una urba...</descripcion>
+      <texto>Casa en la quienta</texto>
+    </direccion>
+    <propietarios>1</propietarios>
+    <precio>15.00</precio>
+  </casa>
+</Inmobiliaria>
