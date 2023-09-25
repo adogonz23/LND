@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE entrenamientos [
+    <!ELEMENT entrenamientos (clientes+,sesiones*,actividad)>
+    <!ELEMENT clientes (nombre,apelido1,apellido2)>
+    <!ATTLIST cliente id ID #REQUIRED>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellido1 (#PCDATA)>
+    <!ELEMENT apellido2 (#PCDATA)>
+    <!ELEMENT sesiones (duracion,distancia, localizacion,comentario?,actividad)>
+    <!ELEMENT duracion (#PCDATA)>
+    <!ATTLIST duracion unidad CDATA "minutos" >
+    <!ELEMENT distancia (#PCDATA)>
+    <!ATTLIST distancia distancia CDATA "KM">
+    
+]>
+<entrenamientos>
+</entrenamientos> 

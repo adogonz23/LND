@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE informacion_persona [
+    <!ELEMENT informacion_persona (persona+)>
+    <!ELEMENT persona (nombre,apellido,nacimiento?,direccion+)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ATTLIST persona sexo CDATA ("hombre|mujer") #REQUIRED>
+    <!ELEMENT apellido (#PCDATA)>
+    <!ELEMENT nacimiento (#PCDATA)>
+    <!ATTLIST nacimiento dia CDATA #REQUIRED>
+    <!ATTLIST nacimiento mes CDATA #REQUIRED>
+    <!ATTLIST nacimiento año CDATA #REQUIRED>   
+    <!ELEMENT direccion (calle, poblacion, provincia, Cp?)>
+    <!ELEMENT calle (#PCDATA)>
+    <!ELEMENT poblacion (#PCDATA)>
+    <!ELEMENT provincia (#PCDATA)>
+    <!ELEMENT Cp (#PCDATA)>
+  
+    
+]>
+<informacion_persona>
+    <persona sexo="hombre">
+        <nombre>adonay</nombre>
+        <apellido>gonzalez</apellido>
+        <nacimiento dia="3" mes="12" año="1995"></nacimiento>
+        <direccion>
+            <calle>tanque de animas</calle>
+            <poblacion>la vic</poblacion>
+            <provincia>S/C</provincia>
+            <Cp>38380</Cp>
+        </direccion>
+    </persona>
+</informacion_persona>

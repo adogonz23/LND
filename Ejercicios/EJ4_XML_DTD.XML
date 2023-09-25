@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!DOCTYPE Concesionario [
-    <!ELEMENT Concesionario (Modelo, Motor, Potencia, Consumo_medio)+>
-    <!ELEMENT Modelo (#PCDATA)>
+    <!ELEMENT Concesionario (Modelo)+>
+    <!ELEMENT Modelo (#PCDATA | Motor| Potencia| Consumo_medio)*>
     <!ATTLIST Modelo id ID #REQUIRED>
-    <!ATTLIST Modelo Modelos_relacionados ID >
+    <!ATTLIST Modelo Modelos_relacionados IDREF >
     <!ELEMENT Motor (#PCDATA)>
     <!ATTLIST Motor Modelos_relacionados ID #REQUIRED>
     <!ELEMENT Potencia (#PCDATA)>
