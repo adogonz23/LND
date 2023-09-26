@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!DOCTYPE informacion_persona [
     <!ELEMENT informacion_persona (persona+)>
-    <!ELEMENT persona (nombre,apellido,nacimiento?,direccion+)>
+    <!ELEMENT persona ( nombre,apellido,(hombre|mujer),nacimiento?,direccion+)>
     <!ELEMENT nombre (#PCDATA)>
-    <!ATTLIST persona sexo CDATA ("hombre|mujer") #REQUIRED>
     <!ELEMENT apellido (#PCDATA)>
     <!ELEMENT nacimiento (#PCDATA)>
+    <!ELEMENT hombre EMPTY>
+    <!ELEMENT mujer EMPTY>
     <!ATTLIST nacimiento dia CDATA #REQUIRED>
     <!ATTLIST nacimiento mes CDATA #REQUIRED>
     <!ATTLIST nacimiento año CDATA #REQUIRED>   
@@ -18,9 +19,10 @@
     
 ]>
 <informacion_persona>
-    <persona sexo="hombre">
+    <persona>
         <nombre>adonay</nombre>
         <apellido>gonzalez</apellido>
+        <hombre />
         <nacimiento dia="3" mes="12" año="1995"></nacimiento>
         <direccion>
             <calle>tanque de animas</calle>

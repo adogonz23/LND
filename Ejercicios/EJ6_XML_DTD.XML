@@ -1,17 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!DOCTYPE entrenamientos [
-    <!ELEMENT entrenamientos (clientes+,sesiones*,actividad)>
-    <!ELEMENT clientes (nombre,apelido1,apellido2)>
-    <!ATTLIST cliente id ID #REQUIRED>
+    <!ELEMENT entrenamientos (clientes+,sesiones*)>
+    <!ELEMENT clientes (nombre,apellido1,apellido2)>
+    <!ATTLIST clientes id ID #REQUIRED>
     <!ELEMENT nombre (#PCDATA)>
     <!ELEMENT apellido1 (#PCDATA)>
     <!ELEMENT apellido2 (#PCDATA)>
-    <!ELEMENT sesiones (duracion,distancia, localizacion,comentario?,actividad)>
+    <!ELEMENT sesiones (duracion,distancia,localizacion, comentario?)>
+    <!ATTLIST sesiones Actividad (running|natacion|bicicleta) "running">
+    <!ATTLIST sesiones pulsasiones CDATA #IMPLIED>
+    <!ATTLIST sesiones idCliente IDREF #REQUIRED>
     <!ELEMENT duracion (#PCDATA)>
-    <!ATTLIST duracion unidad CDATA "minutos" >
+    <!ATTLIST duracion unidad (minutos|segundos|horas) "minutos" >
     <!ELEMENT distancia (#PCDATA)>
-    <!ATTLIST distancia distancia CDATA "KM">
+    <!ATTLIST distancia distancia1 (KM|millas|vueltas) "KM">
+    <!ELEMENT localizacion (#PCDATA)>
+    <!ELEMENT comentario (#PCDATA)>
     
 ]>
 <entrenamientos>
+    <clientes id="Ado23">
+        <nombre>Adonay</nombre>
+        <apellido1>Gonzalez</apellido1>
+        <apellido2>Gutierrez</apellido2>
+    </clientes>
+    <sesiones Actividad="running" pulsasiones="90" idCliente="Ado23">
+        <duracion unidad="minutos"></duracion>
+        <distancia distancia1="KM"></distancia>
+        <localizacion>La victoria</localizacion>
+    </sesiones>
 </entrenamientos> 
