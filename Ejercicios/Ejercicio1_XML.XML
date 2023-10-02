@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone = "yes"?>
 <!DOCTYPE clases [
-  <!ELEMENT clases (pizarras, profesores, alumnos)>
+  <!ELEMENT clases (clase+)>
+  <!ELEMENT clase (pizarras?, profesores, alumnos)>
   
   <!ELEMENT pizarras (#PCDATA)>
   <!ELEMENT profesores (nombre-p,apellido-p+)>
@@ -12,13 +13,15 @@
   ]>
 
 <clases>
-<pizarras></pizarras>
-  <profesores>
-      <nombre-p>pedro</nombre-p>
-      <apellido-p>gonz</apellido-p>
-  </profesores>
-  <alumnos>
-      <nombre>Adonay</nombre>
-      <apellido>gonz</apellido>
-  </alumnos>
+  <clase>
+    <pizarras></pizarras>
+      <profesores>
+          <nombre-p>pedro</nombre-p>
+          <apellido-p>gonz</apellido-p>
+      </profesores>
+      <alumnos>
+          <nombre>Adonay</nombre>
+          <apellido>gonz</apellido>
+      </alumnos>
+  </clase>
 </clases>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE banco [
-    <!ELEMENT banco (cuenta, cliente, cuenta_cliente)+>
+    <!ELEMENT banco (cuenta+, cliente+, cuenta_cliente)+>
     <!ELEMENT cuenta (id, saldo)>
     <!ATTLIST cuenta intereses CDATA #REQUIRED>
     <!ELEMENT cliente (nombre, apellidos, id_C)>
@@ -15,16 +15,16 @@
 
 ]>
 <banco>
-    <cuenta intereses="cosa">
-        <id></id>
-        <saldo></saldo>
+    <cuenta intereses="cuenta personal">
+        <id>5454</id>
+        <saldo>195$</saldo>
     </cuenta>
     <cliente>
-        <nombre></nombre>
-        <apellidos></apellidos>
+        <nombre>adonay</nombre>
+        <apellidos>Gonzalez</apellidos>
         <id_C></id_C>
     </cliente>
-    <cuenta_cliente codigo="A">
+    <cuenta_cliente codigo="Ad12">
 
     </cuenta_cliente>
 
