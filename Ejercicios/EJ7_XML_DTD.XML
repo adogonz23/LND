@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!DOCTYPE curso [
-    <!ELEMENT curso (Alumno+,profesore)>
+    <!ELEMENT curso (alumno+,profesor+)>
+    <!ATTLIST curso idCurso ID #REQUIRED>
+    <!ENTITY nn "Juan Luís de Todos Los Santos Ramón">
+    <!ELEMENT alumno (nombreA, apellidoA+)>
+    <!ATTLIST alumno idAlumno ID #REQUIRED>
+    <!ATTLIST alumno idcurso IDREF #REQUIRED>
+    <!ELEMENT nombreA (#PCDATA)>
+    <!ELEMENT apellidoA (#PCDATA)>
+    <!ELEMENT profesor (nombreP, apellidoP)>
+    <!ATTLIST profesor idProfesor ID #REQUIRED>
+    <!ATTLIST profesor idCurso IDREF #REQUIRED>
+    <!ELEMENT nombreP (#PCDATA)>
+    <!ELEMENT apellidoP (#PCDATA)>
+    
 ]>
-<curso>
+<curso idCurso="primero">
+    <alumno idAlumno="adogonz" idcurso="primero">
+        <nombreA>adonay</nombreA>
+        <apellidoA>gonzalez</apellidoA>
+    </alumno>
+    <profesor idProfesor="pedro2" idCurso="primero">
+        <nombreP> &nn;</nombreP>
+        <apellidoP>Gonzalez</apellidoP>
+    </profesor>
 </curso>
