@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="tarea1esquema.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
-<alumnos>  
+<alumnos grupo="1">
+    <profesor DNI="78641847B">
+        <nombre>Von Maxi</nombre>
+        <edad>29</edad>
+        <telefono>655344624</telefono>
+    </profesor>  
     <alumno DNI="78641847V">
         <nombre>Adonay</nombre>
         <edad>23</edad>
-        <nota>7.5</nota>
-        <nota>5</nota>
-        <nota>3</nota>
+        <nota eval="1">7.5</nota>
+        <nota eval="1">5</nota>
+        <nota eval="1">3</nota>
         <telefono>644355264</telefono>
     </alumno>
 </alumnos>    
