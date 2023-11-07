@@ -1,35 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
-
-<xs:element name="alumnos">
-    <xs:complexType>
-        <xs:sequence>
-            <xs:element ref="profesor" minOccurs="1" maxOccurs="unbounded"></xs:element>
-            <xs:element ref="alumno" minOccurs="1" maxOccurs="unbounded"></xs:element>
-            
-        </xs:sequence>
-        <xs:attribute name="grupo" type="xs:integer" use="optional" default="1"></xs:attribute>
-    </xs:complexType>
-</xs:element>
-    <xs:element name="profesor" type="persona"></xs:element>
-    <xs:element name="alumno" type="persona"></xs:element>
-    
-    <xs:element name="nota">
+    <xs:element name="alumnos">
         <xs:complexType>
-            <xs:simpleContent>
-                <xs:extension base="xs:decimal">
-                    <xs:attribute name="eval" type="xs:integer" use="required"/>
-                </xs:extension>
-            </xs:simpleContent>
+            <xs:sequence>
+                <xs:element ref="alumno" minOccurs="1" maxOccurs="unbounded"></xs:element>
+            </xs:sequence>
+            <xs:attribute name="grupo" type="xs:integer" use="optional" default="1"></xs:attribute>
         </xs:complexType>
     </xs:element>
+        <xs:element name="alumno" type="persona"></xs:element>
+    <xs:element name="nota">
+            <xs:complexType>
+                <xs:simpleContent>
+                    <xs:extension base="tipoNota">
+                        <xs:attribute name="eval" type="tipoeval" use="required"/>
+                    </xs:extension>
+                </xs:simpleContent>
+            </xs:complexType>
+    </xs:element>
     <xs:complexType name="persona">
-            <xs:sequence>
-                <xs:element name="nombre" type="xs:string"></xs:element>
-                <xs:element name="edad" type="xs:int"></xs:element>
-                <xs:element ref="nota" minOccurs="0" maxOccurs="unbounded"></xs:element>
-                <xs:element name="telefono" type="xs:string" minOccurs="0" maxOccurs="unbounded"></xs:element>
-            </xs:sequence>
-            <xs:attribute name="DNI" type="xs:string" use="required"></xs:attribute>
+                <xs:sequence>
+                    <xs:element name="nombre" type="tipoNombre"></xs:element>
+                    <xs:element name="edad" type="tipoEdad"></xs:element>
+                    <xs:element ref="nota" minOccurs="0" maxOccurs="unbounded"></xs:element>
+                    <xs:element name="telefono" type="xs:string" minOccurs="0" maxOccurs="unbounded"></xs:element>
+                    <xs:element name="iniciales" type="iniciales"/>
+                    <xs:element name="optativa" type="xs:string"/>
+                </xs:sequence>
+                <xs:attribute name="DNI" type="tipoDni" use="required"></xs:attribute>
     </xs:complexType>
+    <xs:simpleType name="tipoeval">
+            <xs:restriction base="xs:integer">
+                <xs:enumeration value="1"/>
+                <xs:enumeration value="2"/>
+                <xs:enumeration value="3"/>
+            </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipoDni">
+        <xs:restriction base="xs:string">
+            <xs:length value="9"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipoNombre">
+        <xs:restriction base=" xs:string">
+            <xs:minLength value="3"/>
+            <xs:maxLength value="15"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipoNota">
+        <xs:restriction base="xs:decimal">
+        <xs:fractionDigits value="2"/>
+        <xs:totalDigits value="3"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipoEdad">
+        <xs:restriction base="xs:decimal">
+        <xs:fractionDigits value="1"/>
+        <xs:totalDigits value="3"/>
+        <xs:maxExclusive value="120"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="iniciales">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z][A-Z][A-Z]"/>
+        </xs:restriction>
+    </xs:simpleType>
+
 </xs:schema>
