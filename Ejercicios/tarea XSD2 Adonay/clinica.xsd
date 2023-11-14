@@ -1,0 +1,53 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="clinicaveterinaria">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Cliente" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="nombreRestric"/>
+                            <xs:element name="apellidos" type="xs:string" />
+                            <xs:element name="animal"  maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                    <xs:element name="perro" type="tipoAnimales" minOccurs="0" maxOccurs="unbounded"></xs:element>
+                                    <xs:element name="reptil" type="tipoAnimales" minOccurs="0" maxOccurs="unbounded"></xs:element>
+                                    <xs:element name ="gato" type="tipoAnimales" minOccurs="0" maxOccurs="unbounded"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element> 
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="codigo" type="xs:int"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="tipoAnimales">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="edad" type="xs:int"/>
+            <xs:element name="raza" type="xs:string"/>
+            <xs:element name= "chip" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute name="sexo" type="sexoAnimal"/>
+        <xs:attribute name="vacunado" type="vacunadoTrue" use="optional"/>
+    </xs:complexType>
+    <xs:simpleType name="nombreRestric">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="10"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="sexoAnimal">
+        <xs:restriction base="xs:string">
+        <xs:enumeration value="M"/>
+        <xs:enumeration value="H"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="vacunadoTrue">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="true"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
