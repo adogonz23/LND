@@ -1,0 +1,9 @@
+<!ELEMENT listado_discos (disco+)>
+<!ELEMENT disco (datos,descripcion)>
+<!ATTLIST disco tipo NMTOKEN #REQUIRED>
+<!ELEMENT datos (solista,titulo,anio?)>
+<!ELEMENT solista (#PCDATA)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT descripcion (cancion+)>
+<!ELEMENT cancion (#PCDATA)>
+<!ELEMENT anio (#PCDATA)>
