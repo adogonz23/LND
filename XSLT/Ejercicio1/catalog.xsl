@@ -6,8 +6,8 @@
         <h2>Mis cds</h2>
         <table border="1">
             <tr>
+                <th>titulo</th>
                 <th>Artista</th>
-                <th>Titulo</th>
             </tr>
             <xsl:for-each select="//cd">
             <tr>
