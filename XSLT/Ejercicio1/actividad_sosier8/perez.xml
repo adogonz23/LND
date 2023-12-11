@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<carta>
+    <invitacion>
+       <destinatario>María - Álvarez Pérez</destinatario>
+       <eventos>1º Congregacion de los Pérez</eventos>
+    </invitacion>
+    <invitacion>
+       <destinatario>Iván - Rodríguez Pérez</destinatario>
+       <eventos>1º Congregacion de los Pérez</eventos>
+    </invitacion>
+    <invitacion>
+       <destinatario>Luis Fernando - Jiménez Pérez</destinatario>
+       <eventos>1º Congregacion de los Pérez</eventos>
+    </invitacion>
+ </carta>
+ 
