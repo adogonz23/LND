@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bailes>
+    <baile>
+        <nombre>Tango</nombre>
+        <precio moneda="Dolares" cuota="Trimestral">75</precio>
+        <comienzo>01/02/2024</comienzo>
+        <fin>20/02/2024</fin>
+        <profesor>Emiliano</profesor>
+        <sala>103</sala>
+        <plazas>15</plazas>
+    </baile>
+    <baile>
+        <nombre>Flamenco</nombre>
+        <precio moneda="Dolares" cuota="Trimestral">750</precio>
+        <comienzo>13/02/2024</comienzo>
+        <fin>01/03/2024</fin>
+        <profesor>Emilio</profesor>
+        <sala>001</sala>
+        <plazas>12</plazas>
+    </baile>
+    <baile>
+        <nombre>Underground</nombre>
+        <precio moneda="Dolares" cuota="Trimestral">45</precio>
+        <comienzo>20/04/2024</comienzo>
+        <fin>14/05/2024</fin>
+        <profesor>Maximiliano</profesor>
+        <sala>023</sala>
+        <plazas>17</plazas>
+    </baile>
+</bailes>
