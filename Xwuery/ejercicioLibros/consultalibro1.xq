@@ -1,4 +1,4 @@
-for $x at $a in (books.xml) //title
+for $x at $a in doc ("books.xml") //title
 return
 <libros>
   <libro>{$a}. {data($x)}</libro>
