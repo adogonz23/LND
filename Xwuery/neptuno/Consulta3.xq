@@ -9,7 +9,7 @@
     <th>NombreProv</th>
     <th>NombreCliente</th>
   </tr>
-   {for $A in doc ("neptuno.xml")/neptuno
+ {for $A in doc ("neptuno.xml")/neptuno
   where $A/articulos/ReferenciaProveedor = $A/proveedores/ReferenciaProveedor and $A/articulos/NombreCategoria = "alimentación"
   return 
    <tr>  
@@ -17,8 +17,7 @@
     <td>{$A/articulos/NombreArticulo}</td>
     <td>{$A/proveedores/ReferenciaProveedor}</td>
     <td>{$A/proveedores/NombreProveedor}</td>
-     <td>{$A/clientes/NombreCliente}</td>
-    
+    <td>{$A/clientes/NombreCliente}</td> 
   </tr>
  }
   </table>
