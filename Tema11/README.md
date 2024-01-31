@@ -9,6 +9,7 @@
 - [Porque usar Odoo](#porque-usar-odoo)
 - [Ventajes de Odoo](#ventajes-de-odoo)
 - [Desventajas de Odoo](#desventajas-de-odoo)
+- [Diferentes modulos](#diferentes-modulos)
 
 
 
@@ -70,3 +71,16 @@ Odoo cubre todas las necesidades de gestión empresarial a través de los difere
 - **Actualizaciones**: Las actualizaciones de Odoo pueden ser complicadas y pueden requerir tiempo y esfuerzo para garantizar una transición suave, especialmente si se han realizado personalizaciones importantes.
 
 - **Soporte**: Aunque Odoo ofrece opciones de soporte, algunos usuarios han reportado experiencias inconsistentes con el soporte técnico, especialmente para la versión de código abierto.
+
+
+# Diferentes modulos
+    
+- **Gestión de inventario**: Este módulo se encarga de gestionar el inventario de la empresa, incluyendo la recepción de productos, el almacenamiento, el seguimiento de existencias, la gestión de ubicaciones y la realización de inventarios físicos.
+
+- **Compras**: El módulo de compras permite gestionar el proceso de adquisición de productos y servicios, desde la solicitud de cotizaciones hasta la recepción de productos y la gestión de proveedores. Incluye funciones como la creación de órdenes de compra, seguimiento de pedidos, gestión de proveedores y control de costos.
+
+- **Ventas**: Este módulo se encarga de gestionar el proceso de ventas, desde la generación de cotizaciones y pedidos de venta hasta la facturación y el seguimiento de clientes. Incluye funciones como la gestión de clientes, seguimiento de oportunidades de venta, generación de informes de ventas y análisis de rendimiento.
+
+- **Producción**: El módulo de producción está diseñado para gestionar el proceso de fabricación de productos, incluyendo la planificación de la producción, la gestión de órdenes de fabricación, el control de calidad y la gestión de materiales. Permite optimizar los recursos y mejorar la eficiencia en la producción.
+
+- **Logística**: Este módulo se encarga de gestionar la logística y distribución de productos, incluyendo la planificación de rutas de entrega, gestión de almacenes, seguimiento de envíos y gestión de transportistas. Facilita la gestión de la cadena de suministro y la entrega de productos a los clientes de manera eficiente.
