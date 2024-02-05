@@ -26,7 +26,7 @@ Odoo como software de gestión empresarial (ERP) se encarga de integrar todas la
 
 <img src ="images/appOdoo.png"/>
 
-En la Captura de pantalla podemos observar todas las aplicacciones que no puedo ofreccer Odoo como ERP. 
+En la Captura de pantalla podemos observar todas las aplicacciones que nos puedo ofreccer Odoo como ERP. 
 
 # Porque usar Odoo
 
