@@ -11,6 +11,7 @@ Adonay González Gutiérrez 1º DAM
     - [¿Que es SAP?](#que-es-sap)
 - [Practica 2](#practica-2)
   - [CMS](#cms)
+  - [E-Learning](#e-learning)
 
 
 # Practica 1
@@ -63,3 +64,23 @@ entre un ERP, un CRM, un CMS y una aplicación de E-Learning.
 Como en lanterio practica hablamos de lo que es  **ERP y CRM** en este apartado explicaremos un poco lo que es un **CMS** y el **E-Leraning** y de cuales son sus diferencias.
 
 ## CMS 
+CMS tambien conocido como **Gestor de contenido** te permite crear, organizar, publicar y eliminar contenidos de tu sitio web.
+
+- Creación y publicación de páginas;
+- Edición de textos y códigos de sitios web;
+- Moderación de comentarios;
+- Control de inventario y sistema de ventas (si es ecommerce);
+- Instalación de plugins y extensiones para aumentar las funciones del sitio;
+- Biblioteca de medios, para cargar imágenes y videos que se utilizarán en el sitio web.
+
+Ejempls de CMS son **Worpress**, **Grupal** etc...
+
+<img src= "images/cms-2.jpg">
+
+## E-Learning
+
+El término e-Learning lo podemos entender como procesos de enseñanza-aprendizaje a través de Internet. Esta modalidad permite: Una formación completamente a distancia donde los alumnos acceden a los contenidos, actividades, tareas, tutores del curso, etc. a través de Internet.
+
+<img src="images/e-learning.png">
+
+Sabiendo ya que es cada uno de los apartados podemos decir que las diferencias entre ellos son principalmente que los ERP y los CMR estan dedicados para la capa de negocio como la gestion de recursos de una empresa y la gestion de datos de los clientes en cambio los cms suelen utilizace mas para la creacion de sitios web. Por ultimo el e-learning es un metodo de aprendicaje informatizado basado en cursos online y demas.
