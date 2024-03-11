@@ -8,7 +8,7 @@
 <body>
     <div>
         <h2>Contacta Conmigo...</h2>
-        <form action="">
+        <form action="" >
             <div>
                 <label for="nombre"> Tu Nombre:</label>
                 <input type="text" name="" id="">
@@ -18,10 +18,10 @@
                 Tu sexo:
                 <br>
                 
-                <input type="checkbox" value="">
+                <input type="radio" value=""  >
                 <label for="sexo">Hombre</label>
                 <br>
-                <input type="checkbox" value="">
+                <input type="radio" value="">
                 <label for="sexo">Mujer</label>
             </div>
             <br>
@@ -29,7 +29,7 @@
                 Estas estudiando:
                 <select name="Asignaturas" id="">
                     <option value="DAM">Diseño de Aplicaciones Multiplataforma</option>
-                    <option value="2DAM">2ºDiseño de Aplicaciones Multiplataforma</option>
+                    <option value="2DAM" selected>2ºDiseño de Aplicaciones Multiplataforma</option>
                     <option value="Asir">Gestion de Sistemas infmaticos</option>
                     <option value="2Asir">2ºGestion de Sistemas infmaticos</option>
                 </select>
@@ -38,11 +38,11 @@
             <div>
                 <label for="mensaje"> Texto de tu mensaje;</label>
                 <br>
-                <textarea name="Mensaje" id="" cols="30" rows="10"></textarea>
+                <textarea name="Mensaje" id="Mensaje" cols="30" rows="10">Escriba aqui sus cosas</textarea>
             </div>
             <br>
             <div>
-                <button>Contacta conmigo</button>
+                <input type="button" onclick="alert('booooooooooooooooom')" value="Soy una bomba">
             </div>
         </form>
     </div>
