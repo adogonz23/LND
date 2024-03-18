@@ -1,0 +1,19 @@
+
+nav ,aside,footer,main,header{
+    border-style: solid;
+    width: 40%;
+    height: 100px;
+    background-color: beige;
+    float: left;
+    margin-left: 6%;
+    margin-top: 1rem;
+    
+}
+footer{
+    background-color: blueviolet;
+    color:  white;
+    border-color: black;
+}
+body{
+    background-color: bisque;
+}

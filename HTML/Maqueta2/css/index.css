@@ -1,0 +1,36 @@
+nav{
+    background-color: grey;
+    width: 80%;
+    height: 80px;
+    float: left;
+}
+header{
+    background-color: azure;
+    width: 20%;
+    height: 80px;
+    float: left;
+}
+main h2 {
+    text-align: center;
+}
+footer{
+    background-color: antiquewhite;
+}
+main section{
+    background-color:white;
+    width: 80%;
+    height: 100px;
+    margin-left: 10%;
+    text-align: center;
+}
+main{
+    background-color: red;
+}
+main article{
+    background-color: white;
+    float: left;
+    width: 20%;
+    height: 100px;
+    margin-left: 10%;
+    margin-top: 20px;
+}
