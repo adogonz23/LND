@@ -5,7 +5,7 @@ nav{
     float: left;
 }
 header{
-    background-color: azure;
+    background-color: rgb(0, 255, 255);
     width: 20%;
     height: 80px;
     float: left;
@@ -13,24 +13,37 @@ header{
 main h2 {
     text-align: center;
 }
-footer{
-    background-color: antiquewhite;
+
+
+main{
+    background-color: rgb(0, 26, 255);
+    height: 500px;
 }
 main section{
-    background-color:white;
+    background-color:rgb(0, 38, 255);
     width: 80%;
     height: 100px;
     margin-left: 10%;
     text-align: center;
 }
-main{
-    background-color: red;
-}
 main article{
-    background-color: white;
+    background-color: rgb(32, 187, 32);
     float: left;
     width: 20%;
     height: 100px;
     margin-left: 10%;
     margin-top: 20px;
+}
+footer{
+    background-color: antiquewhite;
+    width: 100%;
+    height: 80px;
+    
+}
+footer article{
+    background-color: rgb(32, 187, 32);
+    float: left;
+    width: 20%;
+    height: 30px;
+    margin-left: 10%;
 }
