@@ -1,0 +1,15 @@
+body div{
+    
+}
+form{
+    width: 50%;
+    height: 200px;  
+    background-color: azure;  
+    
+}
+form div {
+    float: left;
+    width: 100%;
+    text-align: center;
+    
+}
